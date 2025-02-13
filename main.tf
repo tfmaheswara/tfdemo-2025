@@ -13,7 +13,7 @@ data "aws_ami" "ubuntu_ami" {
 */
 
 resource "aws_instance" "web" {
-  ami           = "ami-00bb6a80f01f03502"
+  ami           = "ami-0000791bad666add5"
   instance_type = "t2.micro"
   #instance_type = var.typeofinstace
   subnet_id     = "subnet-01b2e6905e667ab81"
