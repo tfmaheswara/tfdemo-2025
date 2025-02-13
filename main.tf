@@ -11,9 +11,6 @@ data "aws_ami" "ubuntu_ami" {
   }
 }
 */
-data "aws_security_group" "selected" {
-  id = "${var.security_group_id}"
-}
 
 resource "aws_instance" "web" {
   ami           = "ami-00bb6a80f01f03502"
