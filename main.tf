@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   #instance_type = var.typeofinstace
   subnet_id     = "subnet-01b2e6905e667ab81"
   security_groups = ["sg-0043de2da52bdff41", "sg-07905bd9a7b33776e"]
-  tags = {s
+  tags = {
     Name = "HelloWorld"
   }
   #tags = local.common_tags
