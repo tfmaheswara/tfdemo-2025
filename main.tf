@@ -16,7 +16,7 @@ resource "aws_instance" "web" {
   ami           = data.aws_ami.latest_amazon_linux.id #data.aws_ami.latest_amazon_linux.id  #"ami-0000791bad666add5"
   instance_type = "t2.micro"
   #instance_type = var.typeofinstace
-  #subnet_id     = "subnet-0e64e73bac365a9af"
+  subnet_id     = "subnet-0e64e73bac365a9af"
   vpc_security_group_ids  = ["sg-0043de2da52bdff41","sg-07905bd9a7b33776e"]
   tags = {
     Name = "HelloWorld"
